@@ -4,6 +4,7 @@
   "description": "pos",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon app"
   },
   "author": "weza",
   "license": "ISC",
