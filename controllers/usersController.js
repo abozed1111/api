@@ -2,7 +2,7 @@ const { poolPromise } = require('../config/db'); // فقط استيراد poolPr
 const userModel = require('../models/userModel');
 
 // الحصول على جميع المستخدمين
-exports.getUsers = async (req, res) => {
+exports.Users = async (req, res) => {
     try {
         const pool = await poolPromise;
         const result = await pool.request().query('SELECT * FROM users');
@@ -32,7 +32,6 @@ exports.addUser = async (req, res) => {
     }
 };
 
-// تسجيل دخول المستخدم
 // تسجيل دخول المستخدم
 exports.loginUser = async (req, res) => {
     const { name, pass } = req.body; // استخرج البيانات من الجسم

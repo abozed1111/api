@@ -4,7 +4,9 @@
   "description": "pos",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app"
+    "start": "nodemon app",
+    "dev": "nodemon --watch .env --exec node app.js"
+    
   },
   "author": "weza",
   "license": "ISC",

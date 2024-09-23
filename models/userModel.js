@@ -8,7 +8,7 @@ const addUser = async (userData) => {
 
         const result = await pool.request()
             .input('name', sql.NVarChar, userData.name)
-            .input('pass', sql.NVarChar, userData.pass) // استخدم كلمة المرور بدون تشفير
+            .input('pass', sql.NVarChar, userData.pass) 
             .input('admin', sql.Bit, userData.admin)
             .input('managment', sql.Bit, userData.managment)
             .input('accounts', sql.Bit, userData.accounts)
